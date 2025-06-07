@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Guide to Build a Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, section {
+      padding: 40px 80px;
+    }
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .hover-effect:hover {
+      background-color: #ecf0f1;
+      transition: 0.3s;
+    }
+    .scroll-section {
+      position: relative;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .scroll-box {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+    .animation {
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .chart-container {
+      margin: 30px 0;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    canvas {
+      max-width: 100%;
+    }
+    .future-section, .career-section, .impact-section {
+      background-color: #ffffff;
+      margin-top: 40px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    img {
+        width:480px;
+        height: 300px;
+        object-fit:fill;/* fills the box, may stretch */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>What is Required to Build a Website</h1>
+    <p>Languages, Tools, Databases, Future Trends & Career Opportunities</p>
+</header>
+
+  <section>
+    <h2>Introduction to Website Development</h2>
+    <p>Website development involves both frontend (user interface) and backend (server-side logic). It has evolved from static HTML pages to highly dynamic, real-time applications powered by advanced technologies.</p>
+  </section>
+<img src = "code-image.jpg" alt = "Black-Screen">
+  <section class="hover-effect">
+    <h2>Languages Used in Web Development</h2>
+    <ul>
+      <li><strong>HTML:</strong> Structures web content.</li>
+      <li><strong>CSS:</strong> Styles the presentation layer.</li>
+      <li><strong>JavaScript:</strong> Enables dynamic user interactions.</li>
+      <li><strong>Python:</strong> Streamlines backend processes with frameworks like Django/Flask.</li>
+      <li><strong>PHP:</strong> Still dominant in CMS platforms.</li>
+      <li><strong>Java:</strong> Used in high-security, enterprise-grade applications.</li>
+      <li><strong>Ruby:</strong> Quick development with Rails framework.</li>
+      <li><strong>SQL:</strong> Core to managing structured data.</li>
+      <li><strong>NoSQL:</strong> Key for big data, scalable solutions.</li>
+    </ul>
+  </section>
+
+  <section class="hover-effect">
+    <h2>Popular Databases</h2>
+    <ul>
+      <li><strong>MySQL:</strong> Traditional, structured, relational data handling.</li>
+      <li><strong>PostgreSQL:</strong> Supports complex queries, GIS data.</li>
+      <li><strong>MongoDB:</strong> Schema-less JSON-like document database.</li>
+      <li><strong>Firebase:</strong> Realtime syncing & authentication.</li>
+      <li><strong>Redis:</strong> Lightning-fast caching layer.</li>
+    </ul>
+  </section>
+
+  <section class="chart-container">
+    <h2>Frontend vs Backend Language Usage (2024)</h2>
+    <canvas id="languageChart"></canvas>
+  </section>
+<img src = "Full-Stack-languages.png">
+  <section class="chart-container">
+    <h2>Database Popularity Over Time</h2>
+    <canvas id="databaseChart"></canvas>
+  </section>
+ 
+  <section class="scroll-section">
+    <div class="scroll-box">
+      <h2>Website Building Journey: Past 50 Years</h2>
+    <div class="animation"><p><strong>1970s–1980s:</strong> Basic HTML files, text-only browsing.</p></div>
+    <div class="animation"><p><strong>1990s:</strong> JavaScript and Flash. First databases and dynamic pages.</p></div>
+    <div class="animation"><p><strong>2000s:</strong> Rise of PHP, MySQL, CMSs like WordPress.</p></div>
+    <div class="animation"><p><strong>2010s:</strong> Mobile-first responsive designs. React, Angular, Vue boom.</p></div>
+    <div class="animation"><p><strong>2020s:</strong> JAMstack, Serverless, AI coding assistants, Tailwind.</p></div>
+  </div>  
+</section>
+
+<img src ="web-development-programming-languages.png">
+  <section class="impact-section">
+    <h2>Impact of Each Language & Stack</h2>
+    <ul>
+      <li><strong>HTML:</strong> Enables universal browser compatibility.</li>
+      <li><strong>JavaScript:</strong> Powers most UI interactivity and web logic.</li>
+      <li><strong>Python/Flask/Django:</strong> Simplifies development and boosts security.</li>
+      <li><strong>Node.js:</strong> Real-time, event-driven web services.</li>
+      <li><strong>React/Vue:</strong> Component-based, reusable UI design.</li>
+    </ul>
+  </section>
+
+  <section class="future-section">
+    <h2>Future of Web Development</h2>
+    <p>Web development is moving toward AI integration, voice interfaces, immersive 3D, and mixed reality. WebAssembly, Quantum-safe protocols, and enhanced security are revolutionizing how websites perform. Automation and no-code platforms will make development accessible to everyone, while full-stack AI developers will lead innovation.</p>
+  </section>
+
+  <section class="career-section">
+    <h2>Career Opportunities in Web Development</h2>
+    <ul>
+      <li>Frontend Developer (React, Vue, Angular)</li>
+      <li>Backend Developer (Node.js, Django, Ruby on Rails)</li>
+      <li>Full Stack Developer</li>
+      <li>DevOps Engineer</li>
+      <li>Database Administrator (DBA)</li>
+      <li>UI/UX Designer</li>
+      <li>Mobile Web Developer</li>
+      <li>Web Security Analyst</li>
+      <li>CMS Expert (WordPress, Joomla)</li>
+    </ul>
+  </section>
+
+  <section class="future-section">
+    <h2>How Web Development Impacts Other CS/IT Fields</h2>
+    <ul>
+      <li><strong>AI/ML:</strong> Web platforms are the delivery mechanism for ML apps.</li>
+      <li><strong>Cybersecurity:</strong> Secure web dev practices reduce vulnerabilities.</li>
+      <li><strong>Cloud Computing:</strong> Hosting scalable web services & microservices.</li>
+      <li><strong>Data Science:</strong> Dashboards and visualization tools are built on the web.</li>
+      <li><strong>IoT:</strong> Many IoT devices use web interfaces for monitoring.</li>
+    </ul>
+  </section>
+
+  <footer style="background-color:#2c3e50; color:white; padding:20px; text-align:center;">
+    <p>&copy; 2025 Website Evolution. All rights reserved. | Created By Gaurav & Jatin</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const languageChart = new Chart(document.getElementById('languageChart'), {
+      type: 'bar',
+      data: {
+        labels: ['HTML', 'CSS', 'JavaScript', 'Python', 'PHP', 'Java'],
+        datasets: [{
+          label: 'Usage %',
+          data: [95, 90, 85, 70, 60, 55],
+          backgroundColor: ['#e74c3c', '#3498db', '#f1c40f', '#2ecc71', '#9b59b6', '#34495e']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    const databaseChart = new Chart(document.getElementById('databaseChart'), {
+      type: 'line',
+      data: {
+        labels: ['2000', '2005', '2010', '2015', '2020', '2025'],
+        datasets: [
+          {
+            label: 'MySQL',
+            data: [30, 50, 70, 85, 90, 92],
+            borderColor: '#3498db',
+            fill: false
+          },
+          {
+            label: 'MongoDB',
+            data: [0, 5, 15, 35, 60, 75],
+            borderColor: '#2ecc71',
+            fill: false
+          },
+          {
+            label: 'PostgreSQL',
+            data: [10, 20, 30, 45, 60, 70],
+            borderColor: '#e67e22',
+            fill: false
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'top' } }
+      }
+    });
+  </script>
+</body>
+</html>
